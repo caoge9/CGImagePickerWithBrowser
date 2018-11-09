@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rJ0-6z-kmU">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CGImagePickerWithBrowser" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fIc-bb-aao" customClass="CGImagePickerView" customModule="CGImagePickerWithBrowser" customModuleProvider="target">
+                                <rect key="frame" x="16" y="84" width="343" height="146"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="146" id="qgU-8a-Rwg"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gf-aq-wRD">
+                                <rect key="frame" x="44" y="250" width="62" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="nGY-qj-tPt"/>
+                                </constraints>
+                                <state key="normal" title="添加照片"/>
+                                <connections>
+                                    <action selector="showImg:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TL5-nA-aO4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sOn-Jo-Eq8">
+                                <rect key="frame" x="38" y="371" width="62" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="aNe-5A-LeF"/>
+                                </constraints>
+                                <state key="normal" title="裁剪照片"/>
+                                <connections>
+                                    <action selector="clip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nCG-Hh-dkS"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lZN-gM-nAZ">
+                                <rect key="frame" x="134" y="345" width="79" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="82" id="ftC-zh-Can"/>
+                                    <constraint firstAttribute="width" constant="79" id="mbl-Mu-K21"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lZN-gM-nAZ" firstAttribute="centerY" secondItem="sOn-Jo-Eq8" secondAttribute="centerY" id="K6o-Hz-GEf"/>
+                            <constraint firstItem="sOn-Jo-Eq8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="Mc1-iT-WL3"/>
+                            <constraint firstItem="4gf-aq-wRD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="44" id="N0f-1E-kXI"/>
+                            <constraint firstItem="lZN-gM-nAZ" firstAttribute="leading" secondItem="sOn-Jo-Eq8" secondAttribute="trailing" constant="34" id="SXw-bd-PAX"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4gf-aq-wRD" secondAttribute="trailing" constant="20" symbolic="YES" id="XDY-c2-CAP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fIc-bb-aao" secondAttribute="trailing" constant="16" id="gs3-Tg-tGt"/>
+                            <constraint firstItem="4gf-aq-wRD" firstAttribute="top" secondItem="fIc-bb-aao" secondAttribute="bottom" constant="20" id="hwY-kG-Bn4"/>
+                            <constraint firstItem="fIc-bb-aao" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="iMc-FI-hKR"/>
+                            <constraint firstItem="sOn-Jo-Eq8" firstAttribute="top" secondItem="4gf-aq-wRD" secondAttribute="bottom" constant="91" id="lIT-8I-i5v"/>
+                            <constraint firstItem="fIc-bb-aao" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="vJN-SO-zHV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nCn-hl-3px"/>
+                    <connections>
+                        <outlet property="clipimg" destination="lZN-gM-nAZ" id="Pmg-F0-7fL"/>
+                        <outlet property="imgPicker" destination="fIc-bb-aao" id="dsE-qI-wYR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="413.60000000000002" y="136.28185907046478"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Zaa-xc-FbL">
+            <objects>
+                <navigationController id="rJ0-6z-kmU" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="X1m-9n-bRO">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="eai-0a-NnT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OJs-QP-OyO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-439" y="122"/>
+        </scene>
+    </scenes>
+</document>

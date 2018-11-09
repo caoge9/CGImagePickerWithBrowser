@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF81DBFE2186A6E60097B272 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF81DBFD2186A6E60097B272 /* AppDelegate.swift */; };
+		FF81DC002186A6E60097B272 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF81DBFF2186A6E60097B272 /* ViewController.swift */; };
+		FF81DC032186A6E60097B272 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF81DC012186A6E60097B272 /* Main.storyboard */; };
+		FF81DC052186A6E80097B272 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF81DC042186A6E80097B272 /* Assets.xcassets */; };
+		FF81DC082186A6E80097B272 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF81DC062186A6E80097B272 /* LaunchScreen.storyboard */; };
+		FF81DC3E2186A71B0097B272 /* ImagePickerLayoutCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF81DC112186A71B0097B272 /* ImagePickerLayoutCollectionViewCell.swift */; };
+		FF81DC3F2186A71B0097B272 /* ImagePickerLayoutCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF81DC122186A71B0097B272 /* ImagePickerLayoutCollectionViewCell.xib */; };
+		FF81DC402186A71B0097B272 /* PlusCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF81DC132186A71B0097B272 /* PlusCollectionViewCell.swift */; };
+		FF81DC412186A71B0097B272 /* PlusCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF81DC142186A71B0097B272 /* PlusCollectionViewCell.xib */; };
+		FF81DC422186A71B0097B272 /* CGImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF81DC152186A71B0097B272 /* CGImagePickerView.swift */; };
+		FF81DC432186A71B0097B272 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF81DC172186A71B0097B272 /* Config.swift */; };
+		FF81DC442186A71B0097B272 /* CGPhotoAlbumListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF81DC1A2186A71B0097B272 /* CGPhotoAlbumListViewController.swift */; };
+		FF81DC452186A71B0097B272 /* CGPhotoAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF81DC1B2186A71B0097B272 /* CGPhotoAlbumViewController.swift */; };
+		FF81DC462186A71B0097B272 /* CGPhotoNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF81DC1D2186A71B0097B272 /* CGPhotoNavigationViewController.swift */; };
+		FF81DC472186A71B0097B272 /* CGPhotoClipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF81DC1F2186A71B0097B272 /* CGPhotoClipViewController.swift */; };
+		FF81DC482186A71B0097B272 /* CGPhotoPreviewDeleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF81DC202186A71B0097B272 /* CGPhotoPreviewDeleteViewController.swift */; };
+		FF81DC492186A71B0097B272 /* CGPhotoPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF81DC212186A71B0097B272 /* CGPhotoPreviewViewController.swift */; };
+		FF81DC4A2186A71B0097B272 /* CGBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF81DC222186A71B0097B272 /* CGBaseViewController.swift */; };
+		FF81DC4B2186A71B0097B272 /* ZYPhotoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF81DC242186A71B0097B272 /* ZYPhotoDataSource.swift */; };
+		FF81DC4C2186A71B0097B272 /* album_photo_delete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF81DC262186A71B0097B272 /* album_photo_delete@2x.png */; };
+		FF81DC4D2186A71B0097B272 /* album_photo_delete@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF81DC272186A71B0097B272 /* album_photo_delete@3x.png */; };
+		FF81DC4E2186A71B0097B272 /* album_select_blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF81DC282186A71B0097B272 /* album_select_blue@2x.png */; };
+		FF81DC4F2186A71B0097B272 /* album_select_blue@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF81DC292186A71B0097B272 /* album_select_blue@3x.png */; };
+		FF81DC502186A71B0097B272 /* album_select_gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF81DC2A2186A71B0097B272 /* album_select_gray@2x.png */; };
+		FF81DC512186A71B0097B272 /* album_select_gray@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF81DC2B2186A71B0097B272 /* album_select_gray@3x.png */; };
+		FF81DC522186A71B0097B272 /* icon_add_nor.png in Resources */ = {isa = PBXBuildFile; fileRef = FF81DC2C2186A71B0097B272 /* icon_add_nor.png */; };
+		FF81DC532186A71B0097B272 /* icon_add_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF81DC2D2186A71B0097B272 /* icon_add_nor@2x.png */; };
+		FF81DC542186A71B0097B272 /* icon_add_nor@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF81DC2E2186A71B0097B272 /* icon_add_nor@3x.png */; };
+		FF81DC552186A71B0097B272 /* icon_add_sel.png in Resources */ = {isa = PBXBuildFile; fileRef = FF81DC2F2186A71B0097B272 /* icon_add_sel.png */; };
+		FF81DC562186A71B0097B272 /* icon_add_sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF81DC302186A71B0097B272 /* icon_add_sel@2x.png */; };
+		FF81DC572186A71B0097B272 /* icon_add_sel@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF81DC312186A71B0097B272 /* icon_add_sel@3x.png */; };
+		FF81DC582186A71B0097B272 /* icon_back_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF81DC322186A71B0097B272 /* icon_back_white@2x.png */; };
+		FF81DC592186A71B0097B272 /* icon_back_white@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF81DC332186A71B0097B272 /* icon_back_white@3x.png */; };
+		FF81DC5A2186A71B0097B272 /* icon_delete.png in Resources */ = {isa = PBXBuildFile; fileRef = FF81DC342186A71B0097B272 /* icon_delete.png */; };
+		FF81DC5B2186A71B0097B272 /* icon_delete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF81DC352186A71B0097B272 /* icon_delete@2x.png */; };
+		FF81DC5C2186A71B0097B272 /* icon_delete@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF81DC362186A71B0097B272 /* icon_delete@3x.png */; };
+		FF81DC5D2186A71B0097B272 /* ZYCachingImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF81DC382186A71B0097B272 /* ZYCachingImageManager.swift */; };
+		FF81DC5E2186A71B0097B272 /* ZYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF81DC392186A71B0097B272 /* ZYExtension.swift */; };
+		FF81DC5F2186A71B0097B272 /* ZYPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF81DC3B2186A71B0097B272 /* ZYPhotoCollectionViewCell.swift */; };
+		FF81DC602186A71B0097B272 /* ZYPreviewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF81DC3C2186A71B0097B272 /* ZYPreviewCollectionViewCell.swift */; };
+		FF81DC612186A71B0097B272 /* ZYProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF81DC3D2186A71B0097B272 /* ZYProgressView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FF81DBFA2186A6E60097B272 /* CGImagePickerWithBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CGImagePickerWithBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF81DBFD2186A6E60097B272 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF81DBFF2186A6E60097B272 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF81DC022186A6E60097B272 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF81DC042186A6E80097B272 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF81DC072186A6E80097B272 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF81DC092186A6E80097B272 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF81DC112186A71B0097B272 /* ImagePickerLayoutCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerLayoutCollectionViewCell.swift; sourceTree = "<group>"; };
+		FF81DC122186A71B0097B272 /* ImagePickerLayoutCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImagePickerLayoutCollectionViewCell.xib; sourceTree = "<group>"; };
+		FF81DC132186A71B0097B272 /* PlusCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlusCollectionViewCell.swift; sourceTree = "<group>"; };
+		FF81DC142186A71B0097B272 /* PlusCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlusCollectionViewCell.xib; sourceTree = "<group>"; };
+		FF81DC152186A71B0097B272 /* CGImagePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGImagePickerView.swift; sourceTree = "<group>"; };
+		FF81DC172186A71B0097B272 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		FF81DC1A2186A71B0097B272 /* CGPhotoAlbumListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPhotoAlbumListViewController.swift; sourceTree = "<group>"; };
+		FF81DC1B2186A71B0097B272 /* CGPhotoAlbumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPhotoAlbumViewController.swift; sourceTree = "<group>"; };
+		FF81DC1D2186A71B0097B272 /* CGPhotoNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPhotoNavigationViewController.swift; sourceTree = "<group>"; };
+		FF81DC1F2186A71B0097B272 /* CGPhotoClipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPhotoClipViewController.swift; sourceTree = "<group>"; };
+		FF81DC202186A71B0097B272 /* CGPhotoPreviewDeleteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPhotoPreviewDeleteViewController.swift; sourceTree = "<group>"; };
+		FF81DC212186A71B0097B272 /* CGPhotoPreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPhotoPreviewViewController.swift; sourceTree = "<group>"; };
+		FF81DC222186A71B0097B272 /* CGBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGBaseViewController.swift; sourceTree = "<group>"; };
+		FF81DC242186A71B0097B272 /* ZYPhotoDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYPhotoDataSource.swift; sourceTree = "<group>"; };
+		FF81DC262186A71B0097B272 /* album_photo_delete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "album_photo_delete@2x.png"; sourceTree = "<group>"; };
+		FF81DC272186A71B0097B272 /* album_photo_delete@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "album_photo_delete@3x.png"; sourceTree = "<group>"; };
+		FF81DC282186A71B0097B272 /* album_select_blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "album_select_blue@2x.png"; sourceTree = "<group>"; };
+		FF81DC292186A71B0097B272 /* album_select_blue@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "album_select_blue@3x.png"; sourceTree = "<group>"; };
+		FF81DC2A2186A71B0097B272 /* album_select_gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "album_select_gray@2x.png"; sourceTree = "<group>"; };
+		FF81DC2B2186A71B0097B272 /* album_select_gray@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "album_select_gray@3x.png"; sourceTree = "<group>"; };
+		FF81DC2C2186A71B0097B272 /* icon_add_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_add_nor.png; sourceTree = "<group>"; };
+		FF81DC2D2186A71B0097B272 /* icon_add_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_add_nor@2x.png"; sourceTree = "<group>"; };
+		FF81DC2E2186A71B0097B272 /* icon_add_nor@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_add_nor@3x.png"; sourceTree = "<group>"; };
+		FF81DC2F2186A71B0097B272 /* icon_add_sel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_add_sel.png; sourceTree = "<group>"; };
+		FF81DC302186A71B0097B272 /* icon_add_sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_add_sel@2x.png"; sourceTree = "<group>"; };
+		FF81DC312186A71B0097B272 /* icon_add_sel@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_add_sel@3x.png"; sourceTree = "<group>"; };
+		FF81DC322186A71B0097B272 /* icon_back_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_back_white@2x.png"; sourceTree = "<group>"; };
+		FF81DC332186A71B0097B272 /* icon_back_white@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_back_white@3x.png"; sourceTree = "<group>"; };
+		FF81DC342186A71B0097B272 /* icon_delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_delete.png; sourceTree = "<group>"; };
+		FF81DC352186A71B0097B272 /* icon_delete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_delete@2x.png"; sourceTree = "<group>"; };
+		FF81DC362186A71B0097B272 /* icon_delete@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_delete@3x.png"; sourceTree = "<group>"; };
+		FF81DC382186A71B0097B272 /* ZYCachingImageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYCachingImageManager.swift; sourceTree = "<group>"; };
+		FF81DC392186A71B0097B272 /* ZYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYExtension.swift; sourceTree = "<group>"; };
+		FF81DC3B2186A71B0097B272 /* ZYPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		FF81DC3C2186A71B0097B272 /* ZYPreviewCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYPreviewCollectionViewCell.swift; sourceTree = "<group>"; };
+		FF81DC3D2186A71B0097B272 /* ZYProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYProgressView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF81DBF72186A6E60097B272 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF81DBF12186A6E60097B272 = {
+			isa = PBXGroup;
+			children = (
+				FF81DBFC2186A6E60097B272 /* CGImagePickerWithBrowser */,
+				FF81DBFB2186A6E60097B272 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF81DBFB2186A6E60097B272 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF81DBFA2186A6E60097B272 /* CGImagePickerWithBrowser.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF81DBFC2186A6E60097B272 /* CGImagePickerWithBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				FF81DC0F2186A71B0097B272 /* CGView */,
+				FF81DC162186A71B0097B272 /* CGImagePickerWithBrowerKit */,
+				FF81DBFD2186A6E60097B272 /* AppDelegate.swift */,
+				FF81DBFF2186A6E60097B272 /* ViewController.swift */,
+				FF81DC012186A6E60097B272 /* Main.storyboard */,
+				FF81DC042186A6E80097B272 /* Assets.xcassets */,
+				FF81DC062186A6E80097B272 /* LaunchScreen.storyboard */,
+				FF81DC092186A6E80097B272 /* Info.plist */,
+			);
+			path = CGImagePickerWithBrowser;
+			sourceTree = "<group>";
+		};
+		FF81DC0F2186A71B0097B272 /* CGView */ = {
+			isa = PBXGroup;
+			children = (
+				FF81DC102186A71B0097B272 /* Cell */,
+				FF81DC152186A71B0097B272 /* CGImagePickerView.swift */,
+			);
+			path = CGView;
+			sourceTree = "<group>";
+		};
+		FF81DC102186A71B0097B272 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FF81DC112186A71B0097B272 /* ImagePickerLayoutCollectionViewCell.swift */,
+				FF81DC122186A71B0097B272 /* ImagePickerLayoutCollectionViewCell.xib */,
+				FF81DC132186A71B0097B272 /* PlusCollectionViewCell.swift */,
+				FF81DC142186A71B0097B272 /* PlusCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		FF81DC162186A71B0097B272 /* CGImagePickerWithBrowerKit */ = {
+			isa = PBXGroup;
+			children = (
+				FF81DC172186A71B0097B272 /* Config.swift */,
+				FF81DC182186A71B0097B272 /* Controller */,
+				FF81DC232186A71B0097B272 /* Model */,
+				FF81DC252186A71B0097B272 /* Resource */,
+				FF81DC372186A71B0097B272 /* Tools */,
+				FF81DC3A2186A71B0097B272 /* View */,
+			);
+			path = CGImagePickerWithBrowerKit;
+			sourceTree = "<group>";
+		};
+		FF81DC182186A71B0097B272 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FF81DC192186A71B0097B272 /* Album */,
+				FF81DC1C2186A71B0097B272 /* Navigation */,
+				FF81DC1E2186A71B0097B272 /* Preview */,
+				FF81DC222186A71B0097B272 /* CGBaseViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FF81DC192186A71B0097B272 /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				FF81DC1A2186A71B0097B272 /* CGPhotoAlbumListViewController.swift */,
+				FF81DC1B2186A71B0097B272 /* CGPhotoAlbumViewController.swift */,
+			);
+			path = Album;
+			sourceTree = "<group>";
+		};
+		FF81DC1C2186A71B0097B272 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				FF81DC1D2186A71B0097B272 /* CGPhotoNavigationViewController.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		FF81DC1E2186A71B0097B272 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				FF81DC1F2186A71B0097B272 /* CGPhotoClipViewController.swift */,
+				FF81DC202186A71B0097B272 /* CGPhotoPreviewDeleteViewController.swift */,
+				FF81DC212186A71B0097B272 /* CGPhotoPreviewViewController.swift */,
+			);
+			path = Preview;
+			sourceTree = "<group>";
+		};
+		FF81DC232186A71B0097B272 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF81DC242186A71B0097B272 /* ZYPhotoDataSource.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FF81DC252186A71B0097B272 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				FF81DC262186A71B0097B272 /* album_photo_delete@2x.png */,
+				FF81DC272186A71B0097B272 /* album_photo_delete@3x.png */,
+				FF81DC282186A71B0097B272 /* album_select_blue@2x.png */,
+				FF81DC292186A71B0097B272 /* album_select_blue@3x.png */,
+				FF81DC2A2186A71B0097B272 /* album_select_gray@2x.png */,
+				FF81DC2B2186A71B0097B272 /* album_select_gray@3x.png */,
+				FF81DC2C2186A71B0097B272 /* icon_add_nor.png */,
+				FF81DC2D2186A71B0097B272 /* icon_add_nor@2x.png */,
+				FF81DC2E2186A71B0097B272 /* icon_add_nor@3x.png */,
+				FF81DC2F2186A71B0097B272 /* icon_add_sel.png */,
+				FF81DC302186A71B0097B272 /* icon_add_sel@2x.png */,
+				FF81DC312186A71B0097B272 /* icon_add_sel@3x.png */,
+				FF81DC322186A71B0097B272 /* icon_back_white@2x.png */,
+				FF81DC332186A71B0097B272 /* icon_back_white@3x.png */,
+				FF81DC342186A71B0097B272 /* icon_delete.png */,
+				FF81DC352186A71B0097B272 /* icon_delete@2x.png */,
+				FF81DC362186A71B0097B272 /* icon_delete@3x.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		FF81DC372186A71B0097B272 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				FF81DC382186A71B0097B272 /* ZYCachingImageManager.swift */,
+				FF81DC392186A71B0097B272 /* ZYExtension.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		FF81DC3A2186A71B0097B272 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF81DC3B2186A71B0097B272 /* ZYPhotoCollectionViewCell.swift */,
+				FF81DC3C2186A71B0097B272 /* ZYPreviewCollectionViewCell.swift */,
+				FF81DC3D2186A71B0097B272 /* ZYProgressView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF81DBF92186A6E60097B272 /* CGImagePickerWithBrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF81DC0C2186A6E80097B272 /* Build configuration list for PBXNativeTarget "CGImagePickerWithBrowser" */;
+			buildPhases = (
+				FF81DBF62186A6E60097B272 /* Sources */,
+				FF81DBF72186A6E60097B272 /* Frameworks */,
+				FF81DBF82186A6E60097B272 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CGImagePickerWithBrowser;
+			productName = CGImagePickerWithBrowser;
+			productReference = FF81DBFA2186A6E60097B272 /* CGImagePickerWithBrowser.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF81DBF22186A6E60097B272 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = CaoDeDi;
+				TargetAttributes = {
+					FF81DBF92186A6E60097B272 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = FF81DBF52186A6E60097B272 /* Build configuration list for PBXProject "CGImagePickerWithBrowser" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF81DBF12186A6E60097B272;
+			productRefGroup = FF81DBFB2186A6E60097B272 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF81DBF92186A6E60097B272 /* CGImagePickerWithBrowser */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF81DBF82186A6E60097B272 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF81DC4F2186A71B0097B272 /* album_select_blue@3x.png in Resources */,
+				FF81DC4C2186A71B0097B272 /* album_photo_delete@2x.png in Resources */,
+				FF81DC542186A71B0097B272 /* icon_add_nor@3x.png in Resources */,
+				FF81DC522186A71B0097B272 /* icon_add_nor.png in Resources */,
+				FF81DC562186A71B0097B272 /* icon_add_sel@2x.png in Resources */,
+				FF81DC5A2186A71B0097B272 /* icon_delete.png in Resources */,
+				FF81DC082186A6E80097B272 /* LaunchScreen.storyboard in Resources */,
+				FF81DC582186A71B0097B272 /* icon_back_white@2x.png in Resources */,
+				FF81DC052186A6E80097B272 /* Assets.xcassets in Resources */,
+				FF81DC3F2186A71B0097B272 /* ImagePickerLayoutCollectionViewCell.xib in Resources */,
+				FF81DC512186A71B0097B272 /* album_select_gray@3x.png in Resources */,
+				FF81DC592186A71B0097B272 /* icon_back_white@3x.png in Resources */,
+				FF81DC552186A71B0097B272 /* icon_add_sel.png in Resources */,
+				FF81DC532186A71B0097B272 /* icon_add_nor@2x.png in Resources */,
+				FF81DC572186A71B0097B272 /* icon_add_sel@3x.png in Resources */,
+				FF81DC5C2186A71B0097B272 /* icon_delete@3x.png in Resources */,
+				FF81DC4E2186A71B0097B272 /* album_select_blue@2x.png in Resources */,
+				FF81DC032186A6E60097B272 /* Main.storyboard in Resources */,
+				FF81DC5B2186A71B0097B272 /* icon_delete@2x.png in Resources */,
+				FF81DC502186A71B0097B272 /* album_select_gray@2x.png in Resources */,
+				FF81DC412186A71B0097B272 /* PlusCollectionViewCell.xib in Resources */,
+				FF81DC4D2186A71B0097B272 /* album_photo_delete@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF81DBF62186A6E60097B272 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF81DC612186A71B0097B272 /* ZYProgressView.swift in Sources */,
+				FF81DC472186A71B0097B272 /* CGPhotoClipViewController.swift in Sources */,
+				FF81DC5F2186A71B0097B272 /* ZYPhotoCollectionViewCell.swift in Sources */,
+				FF81DC462186A71B0097B272 /* CGPhotoNavigationViewController.swift in Sources */,
+				FF81DC452186A71B0097B272 /* CGPhotoAlbumViewController.swift in Sources */,
+				FF81DC3E2186A71B0097B272 /* ImagePickerLayoutCollectionViewCell.swift in Sources */,
+				FF81DC422186A71B0097B272 /* CGImagePickerView.swift in Sources */,
+				FF81DC602186A71B0097B272 /* ZYPreviewCollectionViewCell.swift in Sources */,
+				FF81DC4A2186A71B0097B272 /* CGBaseViewController.swift in Sources */,
+				FF81DC002186A6E60097B272 /* ViewController.swift in Sources */,
+				FF81DC442186A71B0097B272 /* CGPhotoAlbumListViewController.swift in Sources */,
+				FF81DC402186A71B0097B272 /* PlusCollectionViewCell.swift in Sources */,
+				FF81DC482186A71B0097B272 /* CGPhotoPreviewDeleteViewController.swift in Sources */,
+				FF81DC4B2186A71B0097B272 /* ZYPhotoDataSource.swift in Sources */,
+				FF81DBFE2186A6E60097B272 /* AppDelegate.swift in Sources */,
+				FF81DC5E2186A71B0097B272 /* ZYExtension.swift in Sources */,
+				FF81DC5D2186A71B0097B272 /* ZYCachingImageManager.swift in Sources */,
+				FF81DC432186A71B0097B272 /* Config.swift in Sources */,
+				FF81DC492186A71B0097B272 /* CGPhotoPreviewViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FF81DC012186A6E60097B272 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF81DC022186A6E60097B272 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF81DC062186A6E80097B272 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF81DC072186A6E80097B272 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF81DC0A2186A6E80097B272 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF81DC0B2186A6E80097B272 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF81DC0D2186A6E80097B272 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CGImagePickerWithBrowser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yjzx.test.CGImagePickerWithBrowser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF81DC0E2186A6E80097B272 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CGImagePickerWithBrowser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yjzx.test.CGImagePickerWithBrowser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF81DBF52186A6E60097B272 /* Build configuration list for PBXProject "CGImagePickerWithBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF81DC0A2186A6E80097B272 /* Debug */,
+				FF81DC0B2186A6E80097B272 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF81DC0C2186A6E80097B272 /* Build configuration list for PBXNativeTarget "CGImagePickerWithBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF81DC0D2186A6E80097B272 /* Debug */,
+				FF81DC0E2186A6E80097B272 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF81DBF22186A6E60097B272 /* Project object */;
+}
