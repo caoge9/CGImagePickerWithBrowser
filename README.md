@@ -1,5 +1,5 @@
 # CGImagePickerWithBrowser
-![image](https://github.com/caoge9/CGImagePickerWithBrowser/CGimge/1.png) 
+![image](https://github.com/caoge9/CGImagePickerWithBrowser/tree/master/CGimge/1.png) 
 // 预览
 func showSelctImg(index: Int) {
     let photoPreviewVC = CGPhotoPreviewDeleteViewController()
